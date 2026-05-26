@@ -2,7 +2,7 @@
 
 ## Problem
 This project predicts whether a loan should be approved or rejected based on applicant details.
-In this project kaggle dataset is used for prediction.
+In this project kaggle dataset is used for creating model.
 
 ## Features Used
 - Number of Dependents
