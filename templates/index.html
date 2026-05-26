@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="card">
+        <h1><i class="fa-solid fa-building-columns"></i> Loan Approval System</h1>
+        <form action="/predict" method="post" class="grid-form">
+            <div class="input-box">
+                <input type="number" name="dependents" required>
+                <label>Dependents</label>
+            </div>
+            <div class="input-box">
+                <select name="education" required>
+                    <option value="" disabled selected>---Select---</option>
+                    <option value="1">Graduate</option>
+                    <option value="0">Not Graduate</option>
+                </select>
+                <label>Education</label>
+            </div>
+            <div class="input-box">
+                <select name="self_employed" required>
+                    <option value="" disabled selected>---Select---</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                <label>Self Employed</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="income" required>
+                <label>Annual Income</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="loan_amount" required>
+                <label>Loan Amount</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="loan_term" required>
+                <label>Loan Term</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="cibil" required>
+                <label>CIBIL Score</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="residential" required>
+                <label>Residential Assets</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="commercial" required>
+                <label>Commercial Assets</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="luxury" required>
+                <label>Luxury Assets</label>
+            </div>
+            <div class="input-box">
+                <input type="number" name="bank" required>
+                <label>Bank Assets</label>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction_text %}
+        <div class="result">
+            {{ prediction_text }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
