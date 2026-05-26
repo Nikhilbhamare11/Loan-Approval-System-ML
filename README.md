@@ -17,7 +17,7 @@ This project predicts whether a loan should be approved or rejected based on app
 Random Forest Classifier
 
 ## Accuracy
-(Add your accuracy here)
+0.9765807962529274
 
 ## How to Run
 
