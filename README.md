@@ -18,7 +18,7 @@ In this project kaggle dataset is used for creating model.
 Random Forest Classifier
 
 ## Accuracy
-97.65
+97.65%
 
 ## How to Run
 
