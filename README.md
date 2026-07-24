@@ -37,7 +37,6 @@ The dataset used for training and testing the model was obtained from Kaggle.
 ```bash
 pip install -r requirements.txt
 ```
-
 2. Run the test file:
 ```bash
 python test.py
@@ -52,4 +51,8 @@ The model predicts one of the following outcomes:
 
 **Nikhil Bhamare**
 
+Java Full Stack Developer | Frontend Developer
+
 Aspiring Java Full Stack Developer passionate about building scalable applications and Machine Learning solutions.
+
+Thank you for visiting this repository. If you have any feedback, suggestions, or questions, feel free to reach out or create an issue.
