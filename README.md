@@ -51,7 +51,7 @@ The model predicts one of the following outcomes:
 
 **Nikhil Bhamare**
 
-Java Full Stack Developer | Frontend Developer
+Java Full Stack Developer
 
 Aspiring Java Full Stack Developer passionate about building scalable applications and Machine Learning solutions.
 
